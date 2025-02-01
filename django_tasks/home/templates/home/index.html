@@ -1,6 +1,8 @@
 {% include 'base/base.html'%}
 
-{% block title %}home{% endblock %}
+{% block title %}
+Home Page
+{% endblock %}
 
 {% block content %}
     <h1>Home Page</h1>
@@ -16,9 +18,10 @@
                 <a href="{% url 'update' task.id %}" class="btn btn-primary">update</a>
                 <a href="{% url 'delete' task.id %}" class="btn btn-danger">delete</a>
                 {% if task.completed %}
-                <a href="#" class="btn btn-success">View Task</a>
+                <a href="{% url 'view_card' %}" class="btn btn-success">View Task</a>
                 {% endif %}
             </div>
         </div>
     {% endfor %}
+
 {% endblock %}
