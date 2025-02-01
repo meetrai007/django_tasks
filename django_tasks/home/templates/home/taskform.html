@@ -1,0 +1,13 @@
+{% include 'base/base.html'%}
+
+{% block title %}add task{% endblock %}
+
+{% block content %}
+    <h1>add task</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Update Task</button>
+        <a href="{% url 'index' %}" class="btn btn-danger">Cancel</a>
+    </form>
+{% endblock %}
