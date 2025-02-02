@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('task1/', include('task1.urls')),
+    path('task2/', include('task2.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

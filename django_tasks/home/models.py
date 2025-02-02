@@ -6,6 +6,7 @@ class Tasks(models.Model):
     decscription = models.CharField(max_length=200)
     completed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
+    url = models.CharField(max_length=50,default="task/")
 
     def __str__(self):
         return self.task

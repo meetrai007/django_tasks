@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home',
     # third party apps
     'task1',
+    'task2',
 ]
 
 MIDDLEWARE = [
