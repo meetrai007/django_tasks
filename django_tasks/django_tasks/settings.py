@@ -37,11 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', # rest framework
+    'drf_yasg', # for swagger UI
     # custom apps
     'home',
     # third party apps
     'task1',
     'task2',
+    'task3',
 ]
 
 MIDDLEWARE = [
